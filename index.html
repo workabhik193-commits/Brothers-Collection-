@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Brothers Collection — everyday fashion, carefully selected.">
+  <title>Brothers Collection | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">BROTHERS COLLECTION · EVERYDAY STYLE, MADE SIMPLE</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Brothers Collection home">
+      <span class="brand-mark">BC</span>
+      <span>BROTHERS <em>COLLECTION</em></span>
+    </a>
+    <button class="cart-button" id="open-cart" aria-label="Open shopping cart">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW EVERYDAY</p>
+        <h1>Wear your<br><span>own story.</span></h1>
+        <p class="hero-sub">Fresh fits. Easy prices. Your style, your rules.</p>
+        <a class="primary-button" href="#shop">SHOP THE COLLECTION <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Fashion-inspired graphic">
+        <div class="art-circle"></div>
+        <div class="art-label">STYLE<br>STARTS<br>HERE.</div>
+        <div class="art-sticker">BC<br>EST. 2026</div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="Store highlights">
+      <span>✦ Everyday essentials</span><span>✦ Simple ordering</span><span>✦ Direct WhatsApp support</span>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">PICK YOUR FIT</p><h2>Shop the collection</h2></div>
+        <p class="muted">Add your favourites to the bag.</p>
+      </div>
+      <div class="filters" id="filters" aria-label="Filter products">
+        <button class="filter active" data-category="All">All items</button>
+        <button class="filter" data-category="T-Shirts">T-Shirts</button>
+        <button class="filter" data-category="Shirts">Shirts</button>
+        <button class="filter" data-category="Hoodies">Hoodies</button>
+        <button class="filter" data-category="Bottomwear">Bottomwear</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">YOUR STYLE. YOUR WAY.</p><h2>Good fits.<br>Good energy.</h2></div>
+      <p>Find your next everyday favourite at Brothers Collection. Browse the collection and place your order directly through WhatsApp.</p>
+    </section>
+
+    <section class="contact">
+      <div><p class="eyebrow">NEED A HAND?</p><h2>Let's talk style.</h2><p class="muted">Questions about sizes, availability or delivery? Message us.</p></div>
+      <a class="outline-button" id="contact-whatsapp" href="#" target="_blank" rel="noopener">CHAT ON WHATSAPP ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">BC</span><span>BROTHERS <em>COLLECTION</em></span></a><span>© <span id="year"></span> Brothers Collection</span><span>Made for your everyday.</span></footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow">YOUR PICKS</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-cart" id="close-cart" aria-label="Close cart">✕</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-bottom">
+      <div class="total-line"><span>Subtotal</span><strong id="cart-total">₹0</strong></div>
+      <p class="tiny-note">Delivery charges and final availability can be confirmed on WhatsApp.</p>
+      <button class="primary-button checkout-button" id="checkout">ORDER ON WHATSAPP ↗</button>
+      <button class="clear-cart" id="clear-cart">Clear bag</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
